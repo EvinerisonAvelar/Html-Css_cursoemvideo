@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        
+        h1{    /*box-level*/
+            background-color: lightgray;
+            height: 300px;
+            width:  300px;
+
+            /* 
+            Simplificação com shorthand
+            1 - sempre na ordem altura/largura
+            2 - estilo
+            3 - cor
+
+            se for simplicar apenas numeros fazer
+            sempre no sentido horario
+            ex: cima, direita, baixo, esquerda
+
+            ou por exemplo se quiser simplificar mais ainda 
+            se usar apenas doi termos e se comecar com 10px e ele vai enteder que é em cima e em baixo
+            ai se usar mais um 10px ele vai entender que a direita e a esquerda tem o mesmo valor
+            ou entao pode usar os quatro termos se quiser dar valor especifico para cada um
+            ex: padding: 10px 10px 10px 10px;
+
+            */
+        
+
+
+           /* 
+            Simplificação 
+        
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgray; */
+
+            border: 10px solid darkgray;
+
+            /* 
+            Simplificação 
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+
+            padding: 10px;
+
+             /* 
+            Simplificação 
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            
+            o "auto" foi utilizado no lugar 
+            do que diz respeito ao valor do lado direito
+            e esquerdo respectivamente
+            */
+ 
+            margin: 20px auto 40px auto;
+
+              /* 
+            Simplificação
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: darkorange;
+              */
+
+            outline: 10px dashed darkorange;
+        }
+        a{   /*inline-level*/ 
+              /* 
+            Simplificação 
+            padding-top: 5px;
+            padding-bottom: 5px;
+             */
+ 
+            padding: 5px;
+
+             /* 
+            Simplificação
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            */
+
+            border: 10px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>Vamos ver como tudo isso funciona</p>
+    
+</body>
+</html>
